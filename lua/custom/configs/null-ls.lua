@@ -13,6 +13,9 @@ local sources = {
 
   -- cpp
   b.formatting.clang_format,
+
+  -- python
+  b.formatting.autopep8
 }
 
 null_ls.setup {

@@ -51,6 +51,14 @@ local plugins = {
     "lervag/vimtex",
     lazy = false,
   },
+  {
+    "henry-hsieh/riscv-asm-vim",
+    lazy = false,
+  },
+  {
+    "github/copilot.vim",
+    lazy = false,
+  }
 
   -- To make a plugin not be loaded
   -- {
