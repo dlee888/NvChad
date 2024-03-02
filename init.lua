@@ -19,3 +19,12 @@ end
 dofile(vim.g.base46_cache .. "defaults")
 vim.opt.rtp:prepend(lazypath)
 require "plugins"
+
+-- remap autocomplete
+local cmp = require "cmp"
+cmp.setup {
+  mapping = cmp.mapping.preset.insert {
+    ["<Tab>"] = cmp.mapping.confirm { select = true },
+    ["<CR>"] = cmp.mapping.abort(),
+  },
+}

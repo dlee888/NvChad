@@ -6,11 +6,3 @@
 --   command = "tabdo wincmd =",
 -- })
 
--- remap autocomplete
-local cmp = require "cmp"
-cmp.setup {
-  mapping = cmp.mapping.preset.insert {
-    ["<Tab>"] = cmp.mapping.confirm { select = true },
-    ["<CR>"] = cmp.mapping.abort(),
-  },
-}
