@@ -6,3 +6,7 @@
 --   command = "tabdo wincmd =",
 -- })
 
+vim.cmd "autocmd BufNewFile,BufRead *.bsv set ft=bsv"
+vim.cmd "autocmd BufNewFile,BufRead *.ms set ft=bsv"
+vim.cmd "autocmd FileType bsv set shiftwidth=4 expandtab smarttab"
+
