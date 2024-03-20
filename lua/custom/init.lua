@@ -22,3 +22,13 @@ vim.cmd [[let g:clipboard = {
                 \   },
                 \   'cache_enabled': 0,
                 \ }]]
+
+vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
+  pattern = { "*.c", "*.h", "*.cpp", "*.hpp", "*.cc", "*.hh", "*.c++", "*.h++", "*.cxx", "*.hxx" },
+  callback = function()
+    vim.bo.expandtab = true
+    vim.bo.shiftwidth = 4
+    vim.bo.softtabstop = 4
+    vim.bo.tabstop = 4
+  end,
+})
