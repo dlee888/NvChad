@@ -40,7 +40,10 @@ M.mason = {
 
     -- Python
     "pyright",
-    "autopep8"
+    "autopep8",
+
+    -- Latex
+    "texlab",
   },
 }
 
